@@ -1,5 +1,6 @@
 #include "ncharakter.h"
 #include "mainwindow.h"
+#include "startwindow.h"
 #include "ui_ncharakter.h"
 #include <QStringList>
 #include <QComboBox>
@@ -9,6 +10,7 @@
 #include <QCoreApplication>
 #include <QProcess>
 #include <iostream>
+#include "mainwindow.h"
 NCharakter::NCharakter(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::NCharakter)
@@ -352,7 +354,8 @@ void NCharakter::on_pushButton_clicked()
 void NCharakter::on_buttonBox_accepted()
 {
 //ok tlačítko
-
+ //   MainWindow mainwindow;
+  //  mainwindow.show();
     emit SetS(SF,Postih(SF));
     emit SetOb(ObF,Postih(ObF));
     emit SetOd(OdF,Postih(OdF));

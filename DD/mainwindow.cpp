@@ -1,8 +1,8 @@
 #include "mainwindow.h"
 #include "ncharakter.h"
+#include "startwindow.h"
 #include "ui_mainwindow.h"
 #include <QMessageBox>
-#include "ncharakter.h"
 #include <QCoreApplication>
 #include <QObject>
 #include <QStringList>
@@ -121,6 +121,20 @@ void MainWindow::changeRP(QString R,QString P)
 {
     ui->lineEdit_8->setText(R+", "+P);
 
+}
+
+void MainWindow::listen(int c)
+{
+    if (c ==1) {
+        on_actionnov_postava_triggered();
+    }else if (c==2) {
+on_actionna_st_triggered();
+}
+}
+
+void MainWindow::windoListen(){
+
+   // QObject::connect(, SIGNAL(startCall(int)), this, SLOT(listen(int)));
 }
 
 void MainWindow::saveToFile()
@@ -248,6 +262,9 @@ void MainWindow::saveToFile()
     }
 }
 
+
+
+
 void MainWindow::loadFromFile()
 {
     QString fileName = QFileDialog::getOpenFileName(this,
@@ -308,7 +325,7 @@ void MainWindow::loadFromFile()
         in >>MaS4;
         in >>StS1;
         in >>StS2;
-       in >>StS3;
+        in >>StS3;
         in >>StS4;
         in >>VeS1;
         in >>VeS2;
@@ -387,6 +404,7 @@ void MainWindow::loadFromFile()
 void MainWindow::on_actionnov_postava_triggered()
 {
     ncharakter= new NCharakter();
+
 /*
     ncharakter.setModal(true);
     ncharakter.exec();*/

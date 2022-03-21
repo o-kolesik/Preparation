@@ -4,7 +4,6 @@
 #include <QMainWindow>
 #include "ncharakter.h"
 
-
 //QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 //QT_END_NAMESPACE
@@ -90,6 +89,8 @@ public slots:
     void changeRP(QString a, QString b);
     void saveToFile();
     void loadFromFile();
+    void windoListen();
+    void listen(int c);
 
 private:
     Ui::MainWindow *ui;
@@ -97,5 +98,6 @@ private:
 
 
 NCharakter* ncharakter;
+//StartWindow* startWindow;
 };
 #endif // MAINWINDOW_H
