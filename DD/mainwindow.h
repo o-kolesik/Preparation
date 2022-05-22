@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "ncharakter.h"
+#include "dice.h"
 
 //QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -78,6 +79,8 @@ private slots:
 
     void on_actionulo_it_triggered();
 
+    void on_pushButton_dice_clicked();
+
 public slots:
     void changeS(int a,int b);
     void changeOb(int a,int b);
@@ -98,6 +101,7 @@ private:
 
 
 NCharakter* ncharakter;
+Dice* dice;
 //StartWindow* startWindow;
 };
 #endif // MAINWINDOW_H

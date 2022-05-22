@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>678</width>
-    <height>696</height>
+    <height>840</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,6 +18,33 @@
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	
+	border-image: url(:/img/img/button_3.jpg);
+
+}
+QPushButton{
+	background-image: url(:/img/img/button_4.jpg);
+       border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+
+    padding: 6px;
+}
+
+QComboBox{
+	
+	border-image: url(:/img/img/button_4.jpg);
+}
+QLabel{
+font: bold 14px;
+	
+	color: rgb(70, 0, 0);
+}</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_3">
    <item>
@@ -83,6 +110,9 @@
        </item>
        <item>
         <widget class="QComboBox" name="comboBox">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <item>
           <property name="text">
            <string>Válečník</string>
@@ -453,6 +483,9 @@
        <layout class="QHBoxLayout" name="horizontalLayout_16">
         <item>
          <widget class="QLabel" name="label_38">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(170, 0, 0);</string>
+          </property>
           <property name="text">
            <string>Životy</string>
           </property>
@@ -460,6 +493,9 @@
         </item>
         <item>
          <widget class="QLabel" name="label_39">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(170, 0, 0);</string>
+          </property>
           <property name="text">
            <string>0</string>
           </property>
@@ -476,6 +512,9 @@
        <layout class="QHBoxLayout" name="horizontalLayout_17">
         <item>
          <widget class="QLabel" name="label_40">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 171);</string>
+          </property>
           <property name="text">
            <string>Magy</string>
           </property>
@@ -483,6 +522,9 @@
         </item>
         <item>
          <widget class="QLabel" name="label_41">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 171);</string>
+          </property>
           <property name="text">
            <string>0</string>
           </property>

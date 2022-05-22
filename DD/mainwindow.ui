@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>865</width>
-    <height>793</height>
+    <width>888</width>
+    <height>807</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -21,20 +21,47 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>865</width>
-    <height>793</height>
+    <width>888</width>
+    <height>807</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>865</width>
-    <height>793</height>
+    <width>888</width>
+    <height>807</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	border-image: url(:/img/img/back_4.jpg);
+}
+QPushButton{
+	background-image: url(:/img/img/button_4.jpg);
+}
+QLabel{
+font: bold 14px;
+color: rgb(70, 0, 0);
+}
+
+QTextEdit{
+	border-image: url(:/img/img/button_4.jpg);
+}
+
+QLineEdit{
+border-image: url(:/img/img/button_4.jpg);
+}
+
+QSpinBox{
+border-image: url(:/img/img/button_4.jpg);
+}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <widget class="QGroupBox" name="verticalGroupBox">
     <property name="geometry">
      <rect>
@@ -774,7 +801,6 @@
        <property name="font">
         <font>
          <pointsize>15</pointsize>
-         <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
@@ -785,7 +811,6 @@
        <property name="font">
         <font>
          <pointsize>15</pointsize>
-         <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
@@ -806,7 +831,6 @@
        <property name="font">
         <font>
          <pointsize>15</pointsize>
-         <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
@@ -817,7 +841,6 @@
        <property name="font">
         <font>
          <pointsize>15</pointsize>
-         <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
@@ -858,7 +881,6 @@
        <property name="font">
         <font>
          <pointsize>15</pointsize>
-         <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
@@ -869,7 +891,6 @@
        <property name="font">
         <font>
          <pointsize>15</pointsize>
-         <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
@@ -890,7 +911,6 @@
        <property name="font">
         <font>
          <pointsize>15</pointsize>
-         <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
@@ -901,16 +921,15 @@
        <property name="font">
         <font>
          <pointsize>15</pointsize>
-         <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
        <property name="html">
         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Titillium Web'; font-size:15pt; font-weight:600; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:15pt; font-weight:700; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Titillium Web'; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
@@ -929,7 +948,6 @@ p, li { white-space: pre-wrap; }
        <property name="font">
         <font>
          <pointsize>15</pointsize>
-         <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
@@ -940,7 +958,6 @@ p, li { white-space: pre-wrap; }
        <property name="font">
         <font>
          <pointsize>15</pointsize>
-         <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
@@ -1318,7 +1335,7 @@ p, li { white-space: pre-wrap; }
      <item row="0" column="2">
       <widget class="QLabel" name="label_37">
        <property name="text">
-        <string>k8</string>
+        <string>d8</string>
        </property>
       </widget>
      </item>
@@ -1340,14 +1357,14 @@ p, li { white-space: pre-wrap; }
      <item row="0" column="5">
       <widget class="QLabel" name="label_40">
        <property name="text">
-        <string>k12</string>
+        <string>d12</string>
        </property>
       </widget>
      </item>
      <item row="0" column="0">
       <widget class="QLabel" name="label_35">
        <property name="text">
-        <string>k4</string>
+        <string>d4</string>
        </property>
       </widget>
      </item>
@@ -1357,14 +1374,14 @@ p, li { white-space: pre-wrap; }
      <item row="0" column="6">
       <widget class="QLabel" name="label_41">
        <property name="text">
-        <string>k20</string>
+        <string>d20</string>
        </property>
       </widget>
      </item>
      <item row="0" column="1">
       <widget class="QLabel" name="label_36">
        <property name="text">
-        <string>k6</string>
+        <string>d6</string>
        </property>
       </widget>
      </item>
@@ -1377,14 +1394,14 @@ p, li { white-space: pre-wrap; }
      <item row="0" column="4">
       <widget class="QLabel" name="label_39">
        <property name="text">
-        <string>k%</string>
+        <string>d%</string>
        </property>
       </widget>
      </item>
      <item row="0" column="3">
       <widget class="QLabel" name="label_38">
        <property name="text">
-        <string>k10</string>
+        <string>d10</string>
        </property>
       </widget>
      </item>
@@ -1497,6 +1514,13 @@ p, li { white-space: pre-wrap; }
        </property>
       </widget>
      </item>
+     <item row="0" column="8">
+      <widget class="QPushButton" name="pushButton_dice">
+       <property name="text">
+        <string>Kostky</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
   </widget>
@@ -1505,8 +1529,8 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>865</width>
-     <height>22</height>
+     <width>888</width>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menunov_postava">

@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ncharakter.h"
+#include "dice.h"
 #include "startwindow.h"
 #include "ui_mainwindow.h"
 #include <QMessageBox>
@@ -674,5 +675,12 @@ void MainWindow::on_actionulo_it_triggered()
 {
     //save
     saveToFile();
+}
+
+
+void MainWindow::on_pushButton_dice_clicked()
+{
+   dice= new Dice();
+   dice->show();
 }
 
